@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -18,7 +19,7 @@ body {
   margin: auto;
 }
 
-[class*=fontawesome-]:before {
+[class*="fontawesome-"]:before {
   font-family: "FontAwesome", sans-serif;
   position: absolute;
   top: 0;
@@ -56,12 +57,14 @@ body {
   background: #76ff4c;
 }
 
-input, label {
+input,
+label {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* guspra */
-input, button {
+input,
+button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -73,14 +76,14 @@ input, button {
 }
 .stars input:checked ~ label:not(.reset) {
   -webkit-animation: wobble 0.8s ease-out;
-          animation: wobble 0.8s ease-out;
-  color: #FFDB19;
+  animation: wobble 0.8s ease-out;
+  color: #ffdb19;
 }
 /* guspra */
 .stars input:checked ~ label:not(.reset) {
   -webkit-animation: wobble 0.8s ease-out;
-          animation: wobble 0.8s ease-out;
-  color: #FFDB19;
+  animation: wobble 0.8s ease-out;
+  color: #ffdb19;
 }
 /* guspra */
 .stars input:checked:not(#star-reset) ~ button.reset {
@@ -156,13 +159,14 @@ u {
   bottom: 25%;
   left: 0;
   margin: auto;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   text-decoration: none;
   border: 6px solid #f0f0f0;
   border-radius: 100%;
 }
-u:before, u:after {
+u:before,
+u:after {
   content: "";
   position: absolute;
   top: 15px;
@@ -184,8 +188,8 @@ u .cover {
   position: absolute;
   top: -6px;
   left: -6px;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
   border: 6px solid white;
   background: white;
   transform: translate(0, -12px);
@@ -195,10 +199,11 @@ input#star4:checked ~ .face u,
 input#star2:checked ~ .face u {
   width: 36px;
 }
-input#star4:checked ~ .face u:before, input#star4:checked ~ .face u:after,
+input#star4:checked ~ .face u:before,
+input#star4:checked ~ .face u:after,
 input#star2:checked ~ .face u:before,
 input#star2:checked ~ .face u:after {
-  top: 18px;
+  top: 19px;
   height: 10px;
 }
 input#star4:checked ~ .face u:before,
@@ -229,14 +234,15 @@ input#star3:checked ~ .face u {
   border-radius: 60px;
   transform: translateY(-4px);
 }
-input#star3:checked ~ .face u:before, input#star3:checked ~ .face u:after,
+input#star3:checked ~ .face u:before,
+input#star3:checked ~ .face u:after,
 input#star3:checked ~ .face u .cover {
   display: none;
 }
 
 input:not(#star-reset):checked ~ .face {
   -webkit-animation: wobble 0.8s ease-out;
-          animation: wobble 0.8s ease-out;
+  animation: wobble 0.8s ease-out;
 }
 input:not(#star-reset):checked ~ .face,
 input:not(#star-reset):checked ~ .face u {
@@ -250,7 +256,8 @@ input:not(#star-reset):checked ~ .face u:after {
 
 input#star5:checked ~ .face {
   background-color: white;
-  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px,
+    inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px;
 }
 input#star5:checked ~ .face u .cover {
   background: white;
@@ -259,7 +266,9 @@ input#star5:checked ~ .face u .cover {
 
 input#star4:checked ~ .face {
   background-color: #ffffe5;
-  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.05) 0 0 0 20px;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px,
+    inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px,
+    rgba(255, 255, 76, 0.05) 0 0 0 20px;
 }
 input#star4:checked ~ .face u .cover {
   background: #ffffe5;
@@ -268,12 +277,16 @@ input#star4:checked ~ .face u .cover {
 
 input#star3:checked ~ .face {
   background-color: #ffffb2;
-  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.3) 0 0 0 15px, rgba(255, 255, 76, 0.1) 0 0 0 30px;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px,
+    inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px,
+    rgba(255, 255, 76, 0.3) 0 0 0 15px, rgba(255, 255, 76, 0.1) 0 0 0 30px;
 }
 
 input#star2:checked ~ .face {
   background-color: #ffff7f;
-  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.4) 0 0 0 20px, rgba(255, 255, 76, 0.2) 0 0 0 40px;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px,
+    inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px,
+    rgba(255, 255, 76, 0.4) 0 0 0 20px, rgba(255, 255, 76, 0.2) 0 0 0 40px;
 }
 input#star2:checked ~ .face u .cover {
   background: #ffff7f;
@@ -281,12 +294,14 @@ input#star2:checked ~ .face u .cover {
 }
 
 input#star1:checked ~ .face {
-  background-color: #FFFF4C;
-  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.4) 0 0 0 25px, rgba(255, 255, 76, 0.2) 0 0 0 50px;
+  background-color: #ffff4c;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px,
+    inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px,
+    rgba(255, 255, 76, 0.4) 0 0 0 25px, rgba(255, 255, 76, 0.2) 0 0 0 50px;
 }
 input#star1:checked ~ .face u .cover {
-  background: #FFFF4C;
-  border-color: #FFFF4C;
+  background: #ffff4c;
+  border-color: #ffff4c;
 }
 
 @-webkit-keyframes wobble {

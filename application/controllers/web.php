@@ -7,13 +7,11 @@ class Web extends CI_Controller {
 		$con = array(
 			"content" => $this->Content()
 			);
-		$this->load->view('web', $con);
-		echo 'haha';
+		$this->load->view('header', $con);
+		$this->load->view('survei', $con);
+		$this->load->view('footer', $con);
 
 		if (isset($_POST['simpan'])){
-			var_dump($_POST);
-			echo "<br>";
-			echo $_POST['stars'];
 
 			$tgl = date("Y-m-d");
 			$data = array(
@@ -21,12 +19,11 @@ class Web extends CI_Controller {
 				"bintang" => $_POST['stars']
 			);
 			$this->mod_survei->InsertData('data', $data);
-		}
 
-		if (isset($_POST['btnlogin'])){
-			var_dump($_POST);
+			redirect('');
 		}
 	}
+
 	public function Result(){
 		$con = array(
 			"content" => $this->GetResult()

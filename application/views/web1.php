@@ -9,6 +9,7 @@
 
 </head>
 <body>
+  <h4>Apakah Anda puas dengan pelayanan kami?</h4>
 <!-- partial:index.partial.html -->
 <form id="form" method="post">
 <!-- <input class="input100" type="text" placeholder="Username" name="username" autofocus> -->
@@ -24,8 +25,9 @@
     <input type="radio" name="stars" id="star5" ontouchstart="ontouchstart" value="1"/>
     <label class="fa fa-star" for="star5"></label>
     <input type="radio" name="stars" id="star-reset" />
-    <label class="reset" for="star-reset" type="submit" name="btnlogin">simpan</label>
-    <!-- <input type="submit" class="reset" for="star-reset" value="Submit"> -->
+    <!-- <label class="reset" for="star-reset" type="submit" name="simpan">simpan</label> -->
+    <!-- <input type="submit" class="reset" for="star-reset" name="simpan"> -->
+    <button type="submit" name="simpan" for="star-reset" class="reset">simpan</button>
 
     
 
@@ -37,11 +39,7 @@
     
   </fieldset>
   
-<!-- <label class="reset" for="star-reset" type="submit" name="btnlogin">simpanxxxxxxxxxx</label> -->
 
-<button type="submit" name="simpan" for="star-reset" >
-								simpan
-</button>
 </form>
 <!-- partial -->
   <!-- <script src='https://use.fontawesome.com/a99e0df3d3.js'></script><script  src="./script.js"></script> -->
