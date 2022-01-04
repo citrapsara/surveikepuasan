@@ -19,7 +19,6 @@
                     <label class="fa fa-star" for="star5"></label>
                     <input type="radio" name="stars" id="star-reset" />
                     <button type="submit" name="simpan" for="star-reset" class="reset">simpan</button>
-
                     <figure class="face"><i></i><i></i>
                       <u>
                         <div class="cover"></div>

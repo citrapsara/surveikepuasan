@@ -757,7 +757,7 @@ hr {
 ========================================================================== */
 #hero-area {
   background-image: url(../img/hero-area.svg);
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;

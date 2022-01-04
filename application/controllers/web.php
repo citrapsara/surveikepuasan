@@ -4,12 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Web extends CI_Controller {
 	public function index()
 	{
-		$con = array(
-			"content" => $this->Content()
-			);
-		$this->load->view('header', $con);
-		$this->load->view('survei', $con);
-		$this->load->view('footer', $con);
+		$data['status'] = "";
 
 		if (isset($_POST['simpan'])){
 
@@ -20,25 +15,13 @@ class Web extends CI_Controller {
 			);
 			$this->mod_survei->InsertData('data', $data);
 
-			redirect('');
+			$data['status'] = "berhasil";
 		}
+
+		$this->load->view('header', $data);
+		$this->load->view('survei', $data);
+		$this->load->view('footer', $data);
 	}
 
-	public function Result(){
-		$con = array(
-			"content" => $this->GetResult()
-			);
-		$this->load->view('web', $con);	
-	}
-	private function Content(){
-		return $this->load->view('content', array(), true);
-	}
-	public function GetResult(){
-		date_default_timezone_set("Asia/Jakarta");
-		$tgl = date("Y-m-d");
-		$where = "where tanggal = '$tgl'";
-		$data = $this->mod_survei->GetResult();
-		return $this->load->view('result', $data, true);
-	}
 
 }
