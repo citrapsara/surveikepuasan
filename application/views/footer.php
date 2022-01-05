@@ -23,19 +23,21 @@
     <?php     
     if($status == 'berhasil')
     {
-        ?>
-            <script>
-              swal({
-                title: "Terima Kasih!",
-                text: "Penilaian Anda telah berhasil disimpan.",
-                icon: "success",
-                button: "Tutup",
-              });
-            </script>
-        <?php 
+      ?>
+        <script>
+          swal({
+            title: "Terima Kasih!",
+            text: "Penilaian Anda telah berhasil disimpan.",
+            icon: "success",
+            button: "Tutup",
+          }).then(function(){ 
+            window.location = "index.php";
+            }
+          );
+        </script>
+      <?php 
         $status = "";
-    }
-
+      }
     ?>
       
   </body>

@@ -4,6 +4,7 @@
           <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
               <div class="contents">
+                <p><?php echo $status; ?></p>
                 <h4 class="head-title text-center">Apakah Anda puas dengan pelayanan kami?</h4>
                 <form id="form" method="post">
                   <fieldset class="stars">
@@ -29,8 +30,8 @@
               </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-              <div class="intro-img pt-5">
-                <img class="img-fluid" src="assets/template/img/intro-mobile.png" alt="">
+              <div class="intro-img pt-5 text-center">
+                <img class="img-fluid mayung" src="assets/img/mayung.png" alt="">
               </div>            
             </div>
           </div> 

@@ -129,7 +129,7 @@ button {
   background: white;
   border: 6px solid #f0f0f0;
   border-radius: 100%;
-  margin: 100px 0 50px;
+  margin: 105px 0 55px;
   transition: box-shadow 0.4s ease-out;
   left: 22%;
 }
@@ -346,4 +346,8 @@ input#star1:checked ~ .face u .cover {
   100% {
     transform: scale(1);
   }
+}
+
+.img-fluid.mayung {
+  max-width: 65%;
 }
