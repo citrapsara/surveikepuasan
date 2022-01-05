@@ -4,7 +4,6 @@
           <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
               <div class="contents">
-                <p><?php echo $status; ?></p>
                 <h4 class="head-title text-center">Apakah Anda puas dengan pelayanan kami?</h4>
                 <form id="form" method="post">
                   <fieldset class="stars">
